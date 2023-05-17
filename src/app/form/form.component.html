@@ -1,0 +1,19 @@
+<div class="container bg-dark text-dark bg-opacity-10" style="margin: 5px;padding:50px;border-radius: 10px;">
+    <label for="subject" class="fw-semibold fst-italic" style="margin-left: 10px">Subject</label>
+    <select (change)="update_subject($event)" class="form-select" aria-label="Disabled select example" style="margin: 5px;padding:5px;" id="subject">
+        <option selected>Select</option>
+        <option *ngFor="let subject of subjects" [value]="subject">
+            {{subject}}
+        </option>
+    </select>
+    <br>
+    <label for="unit" class="fw-semibold fst-italic" style="margin-left: 10px">Unit</label>
+    <select (change)="update_unit($event)" class="form-select" aria-label="Disabled select example" style="margin: 5px;padding:5px;" id="unit">
+        <option selected>Select</option>
+        <option *ngFor="let unit of units" [value]="unit">
+            {{unit}}
+        </option>
+    </select>
+    <br>
+    <button type="button" class="btn btn-secondary" (click)="download_notes()" style="width: 100%;margin: 5px;padding:5px;">Download PDF File</button>
+</div>
