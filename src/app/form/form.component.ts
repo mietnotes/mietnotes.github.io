@@ -34,7 +34,7 @@ export class FormComponent {
 
   download_notes() {
     if (this.selected_subject && this.selected_unit) {
-      window.open("https://raw.githubusercontent.com/tejus3131/miethub/master/notes/"+this.selected_subject+"/"+this.selected_unit, '_blank')
+      window.open("https://raw.githubusercontent.com/tejus3131/miethub/master/notes/"+this.selected_subject+"/"+this.selected_unit+".pdf", '_blank')
     }
     else {
       alert("Please select a subject and unit")
