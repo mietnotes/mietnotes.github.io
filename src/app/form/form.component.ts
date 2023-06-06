@@ -82,7 +82,7 @@ export class FormComponent {
 
   download_notes() {
     if (this.selected_subject && this.selected_unit) {
-      window.open(this.urls[this.selected_subject][this.selected_unit], '_blank')
+      window.open(this.urls[this.selected_subject][this.selected_unit])
       console.log(this.urls[this.selected_subject][this.selected_unit])
     }
     else {
